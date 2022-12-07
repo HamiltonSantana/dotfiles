@@ -23,3 +23,5 @@ opt.smartindent = true
 opt.wrap = false
 
 vim.g.mapleader = " "
+
+vim.cmd('autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE')
