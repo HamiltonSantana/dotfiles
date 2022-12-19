@@ -1,6 +1,8 @@
 local servers = {
     "sumneko_lua",
     "csharp_ls",
+    "tsserver",
+    "html"
 }
 
 local settings = {
