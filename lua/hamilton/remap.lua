@@ -1,3 +1,4 @@
+
 local nnoremap = require("hamilton.keymap").nnoremap
 local vnoremap = require("hamilton.keymap").vnoremap
 
@@ -8,6 +9,10 @@ nnoremap("<C-left>", "<cmd>:vertical resize -10<cr>")
 nnoremap("<C-right>", "<cmd>:vertical resize +10<cr>")
 nnoremap("<C-up>", "<cmd>: resize -10<cr>")
 nnoremap("<C-down>", "<cmd>: resize +10<cr>")
+nnoremap("<C-u>", "<C-u>zz")
+nnoremap("<C-d>", "<C-d>zz")
+nnoremap("<C-g>", "<NOP>")
+nnoremap("<C-g>", "<cmd>:G<cr>")
 
 local builtin = require("telescope.builtin")
 nnoremap("<C-p>" , builtin.find_files, {})
@@ -18,3 +23,4 @@ nnoremap("<leader>fh" , builtin.help_tags, {})
 -- Visual Mode
 vnoremap("<", "<gv")
 vnoremap(">", ">gv")
+
