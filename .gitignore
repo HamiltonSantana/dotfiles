@@ -9,7 +9,8 @@
 .hushlogin
 .landscape/
 .lesshst
-.local/scripts/
+.local/share/
+.local/state/
 .microsoft/
 .motd_shown
 .node_repl_history
