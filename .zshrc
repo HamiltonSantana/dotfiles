@@ -117,3 +117,7 @@ export PROJECT_ROOT="/mnt/c/Users/Hamilton/Documents/Projects/"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias ll="exa -l -g --icons"
+alias ta="tmux a -t"
+alias tnw="~/.local/scripts/tmux-start.sh "

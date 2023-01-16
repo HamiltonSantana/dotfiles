@@ -4,7 +4,9 @@ local servers = {
     "tsserver",
     "eslint",
     "html",
-    "cssls"
+    "cssls",
+    "golangci_lint_ls",
+    "astro"
 }
 
 local settings = {
