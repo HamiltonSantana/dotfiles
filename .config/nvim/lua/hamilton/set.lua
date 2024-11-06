@@ -21,6 +21,7 @@ opt.cmdheight = 2
 opt.smartindent = true
 
 opt.wrap = false
+opt.conceallevel = 2
 
 vim.g.mapleader = " "
 

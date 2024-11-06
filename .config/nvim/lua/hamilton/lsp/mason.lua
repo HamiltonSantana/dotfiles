@@ -1,12 +1,5 @@
 local servers = {
-    "sumneko_lua",
-    "csharp_ls",
-    "tsserver",
-    "eslint",
-    "html",
-    "cssls",
-    "golangci_lint_ls",
-    "astro"
+    "gopls"
 }
 
 local settings = {
@@ -50,4 +43,3 @@ for _, server in pairs(servers) do
 
     lspconfig[server].setup(opts)
 end
-
