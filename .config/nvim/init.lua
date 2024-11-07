@@ -1,5 +1,5 @@
 require("hamilton.set")
 require("hamilton.remap")
-require("hamilton.packer")
+require("hamilton.lazy")
 require("hamilton.cmp")
 require("hamilton.lsp")

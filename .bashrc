@@ -2,6 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+set -o vi
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -122,8 +124,30 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # Variables
-export PROJECT_ROOT="/mnt/c/Users/Hamilton/Documents/Projects/"
+#export PROJECT_ROOT="/mnt/c/Users/Hamilton/Documents/Projects/"
 
-if test -t 1; then
-    exec zsh
-fi
+# OH My Posh
+export PATH=$PATH:~/bin
+eval "$(oh-my-posh init bash --config https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/half-life.omp.json)"
+
+# FZF Config
+export FZF_DEFAULT_OPTS='--height 40% --tmux bottom,40% --layout reverse --border top'
+export FZF_DEFAULT_COMMAND='fd --type f'
+export FZF_DEFAULT_OPTS="--layout=reverse --inline-info"
+export FZF_CTRL_T_OPTS="
+  --walker-skip .git,node_modules,target
+  --preview 'bat -n --color=always {}'
+  --bind 'ctrl-/:change-preview-window(down|hidden|)'"
+export FZF_CTRL_R_OPTS="
+  --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
+  --color header:italic
+  --header 'Press CTRL-Y to copy command into clipboard'"
+
+# Sources the key-bindings for fzf
+source /usr/share/fzf/key-bindings.bash
+# Sources autocompletion
+source /usr/share/fzf/completion.bash
+
+#if test -t 1; then
+#    exec zsh
+#fi
