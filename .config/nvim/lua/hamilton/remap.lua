@@ -14,12 +14,6 @@ nnoremap("<C-d>", "<C-d>zz")
 nnoremap("<C-g>", "<NOP>")
 nnoremap("<C-g>", "<cmd>:G<cr>")
 
-local builtin = require("telescope.builtin")
-nnoremap("<C-p>" , builtin.find_files, {})
-nnoremap("<leader>fg" , builtin.live_grep, {})
-nnoremap("<leader>fb" , builtin.buffers, {})
-nnoremap("<leader>fh" , builtin.help_tags, {})
-
 -- Visual Mode
 vnoremap("<", "<gv")
 vnoremap(">", ">gv")
