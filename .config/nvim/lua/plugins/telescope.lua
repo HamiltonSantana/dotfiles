@@ -3,7 +3,6 @@ return {
     keys = {
         -- add a keymap to browse plugin files
         -- stylua: ignore
-        builtin = 
         {
             "<leader>ff",
             function() 

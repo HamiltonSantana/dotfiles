@@ -1,5 +1,5 @@
 local servers = {
-    "gopls"
+    -- set the server languages to be install on start
 }
 
 local settings = {

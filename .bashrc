@@ -93,6 +93,10 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias ts='~/.local/scripts/./tmux-sessionizer.sh'
+alias ta='~/.local/scripts/./tmux-attacher.sh'
+alias tt='~/.local/scripts/./tmux-start.sh'
+alias doc-a='~/.dotfiles/./attach.sh'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
