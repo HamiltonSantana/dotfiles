@@ -4,7 +4,7 @@ return {
         -- add a keymap to browse plugin files
         -- stylua: ignore
         {
-            "<leader>ff",
+            "<leader>fp",
             function() 
                 require("telescope.builtin").git_files({ cwd = require("lazy.core.config").options.root }) 
             end,
@@ -12,13 +12,13 @@ return {
 
         },
         {
-            "<leader>fp", 
+            "<leader>fd", 
             function()
                 require("telescope.builtin").find_files({})
             end,
         },
         {
-            "<leader>fg", 
+            "<leader>fr", 
             function()
                 require("telescope.builtin").live_grep({})
             end,  
