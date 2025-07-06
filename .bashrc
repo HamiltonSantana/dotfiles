@@ -97,6 +97,7 @@ alias ts='~/.local/scripts/./tmux-sessionizer.sh'
 alias ta='~/.local/scripts/./tmux-attacher.sh'
 alias tt='~/.local/scripts/./tmux-start.sh'
 alias doc-a='~/.dotfiles/./attach.sh'
+alias cat='bat'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -152,6 +153,3 @@ source /usr/share/fzf/key-bindings.bash
 # Sources autocompletion
 source /usr/share/fzf/completion.bash
 
-#if test -t 1; then
-#    exec zsh
-#fi
