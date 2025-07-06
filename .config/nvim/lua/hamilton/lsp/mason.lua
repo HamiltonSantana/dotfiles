@@ -1,5 +1,5 @@
 local servers = {
-    -- set the server languages to be install on start
+    "csharp_ls"
 }
 
 local settings = {
