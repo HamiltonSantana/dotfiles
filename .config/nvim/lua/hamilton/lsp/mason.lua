@@ -1,5 +1,8 @@
 local servers = {
-    -- set the server languages to be install on start
+    "gopls",
+    "golangci-lint",
+    "goimports",
+    "gofumpt"
 }
 
 local settings = {

@@ -98,6 +98,7 @@ alias ta='~/.local/scripts/./tmux-attacher.sh'
 alias tt='~/.local/scripts/./tmux-start.sh'
 alias doc-a='~/.dotfiles/./attach.sh'
 alias cat='bat'
+alias azure-data='/home/hamilton/tools/azuredatastudio-linux-x64/./azuredatastudio'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -153,3 +154,4 @@ source /usr/share/fzf/key-bindings.bash
 # Sources autocompletion
 source /usr/share/fzf/completion.bash
 
+export PATH="$PATH:~/azuredatastudio-linux-x64"
